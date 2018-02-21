@@ -6,6 +6,99 @@
  * Made By MaterializeCSS.com
  */
 
+ .nav-wrapper.scrolled {
+     background-color: #2B3E50;
+     /*00394D*/
+     color: white;
+ }
+
+ .intro-header {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+ .nav-wrapper {
+    -webkit-transition: all 0.6s cubic-bezier;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.scrolled > ul a  {
+  color: white;
+}
+
+.title-container {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  font-family: 'Roboto', sans-serif;
+  z-index: 999;
+}
+.title-container .headline {
+  text-align: center;
+  color: #fff;
+}
+.title-container h3, .title-container h5 {
+    position: relative;
+    font-weight: 300;
+}
+.title-container h3 {
+  font-size: 42px;
+  line-height: 44px;
+  margin: 15px 0 10px;
+}
+.title-container h5 {
+  font-size: 22px;
+  margin: 20px 0 0;
+}
+
+ .homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 10%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
 .ih-blue-text {
   color: #3DC4FC!important
 }
