@@ -5,10 +5,23 @@
  *
  * Made By MaterializeCSS.com
  */
+ @media only screen  and (min-width : 1224px) {
+   .header-info {
+     font-weight: 300!important;
+     padding-right: 180px;
+     padding-left: 180px;
+   }
+/* Styles */
+}
 
+.font-weight-300 {
+
+}
+.right-border {
+  border-right: 1px solid #8e8e8e;
+}
  .nav-wrapper.scrolled {
-     background-color: #2B3E50;
-     /*00394D*/
+     background-color: #212121;
      color: white;
  }
 
@@ -37,7 +50,7 @@
   left: 0;
   right: 0;
   font-family: 'Roboto', sans-serif;
-  z-index: 999;
+  z-index: 996;
 }
 .title-container .headline {
   text-align: center;
@@ -45,7 +58,6 @@
 }
 .title-container h3, .title-container h5 {
     position: relative;
-    font-weight: 300;
 }
 .title-container h3 {
   font-size: 42px;
