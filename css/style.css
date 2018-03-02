@@ -13,9 +13,12 @@
    }
 /* Styles */
 }
-
+.timeline-section {
+  padding-top:50px;
+  padding-bottom:50px;
+}
 .why-section {
-  height: 100vh;
+  height: 90vh;
 }
 
 .font-weight-300 {
@@ -194,117 +197,78 @@ h1.header {
 }
 /* Timeline */
 
+
 .timeline {
-  border-left: 8px solid #42A5F5;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  color: #333;
-  margin: 50px auto;
-  letter-spacing: 0.5px;
-  position: relative;
-  line-height: 1.4em;
-  padding: 20px;
-  list-style: none;
-  text-align: left;
+    white-space:nowrap;
+    overflow-x: scroll;
+    padding:30px 0 10px 0;
+    position:relative;
 }
 
-.timeline h1,
-.timeline h2,
-.timeline h3 {
-  font-size: 1.4em;
+.entry {
+    display:inline-block;
+    vertical-align:top;
+    background:#292929;
+    color:#fff;
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+    position:relative;
+    border-top:4px solid #06182E;
+    border-radius:3px;
+    min-width:220px;
+    max-width:250px;
 }
 
-.timeline .event {
-  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  position: relative;
+.entry img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    margin-bottom:10px;
 }
 
-.timeline .event:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
+.entry:after {
+    content:'';
+    display:block;
+    background:#eee;
+    width:7px;
+    height:7px;
+    border-radius:6px;
+    border:3px solid #06182E;
+    position:absolute;
+    left:50%;
+    top:-30px;
+    margin-left:-6px;
 }
 
-.timeline .event:before,
-.timeline .event:after {
-  position: absolute;
-  display: block;
-  top: 0;
+.entry:before {
+    content:'';
+    display:block;
+    background:#06182E;
+    width:5px;
+    height:20px;
+    position:absolute;
+    left:50%;
+    top:-20px;
+    margin-left:-2px;
 }
 
-.timeline .event:before {
-  left: -177.5px;
-  color: #212121;
-  content: attr(data-date);
-  text-align: right;
-  /*  font-weight: 100;*/
-
-  font-size: 16px;
-  min-width: 120px;
+.entry h1 {
+    color:#fff;
+    font-size:18px;
 }
 
-.timeline .event:after {
-  box-shadow: 0 0 0 8px #42A5F5;
-  left: -30px;
-  background: #212121;
-  border-radius: 50%;
-  height: 11px;
-  width: 11px;
-  content: "";
-  top: 5px;
-}
-/**/
-/*——————————————
-Responsive Stuff
-———————————————*/
-
-@media (max-width: 945px) {
-  .timeline .event::before {
-    left: 0.5px;
-    top: 20px;
-    min-width: 0;
-    font-size: 13px;
-  }
-  .timeline h3 {
-    font-size: 16px;
-  }
-  .timeline p {
-    padding-top: 20px;
-  }
-  section.lab h3.card-title {
-    padding: 5px;
-    font-size: 16px
-  }
+.entry h2 {
+    letter-spacing:.2em;
+    margin-bottom:10px;
+    font-size:14px;
 }
 
-@media (max-width: 768px) {
-  .timeline .event::before {
-    left: 0.5px;
-    top: 20px;
-    min-width: 0;
-    font-size: 13px;
-  }
-  .timeline .event:nth-child(1)::before,
-  .timeline .event:nth-child(3)::before,
-  .timeline .event:nth-child(5)::before {
-    top: 38px;
-  }
-  .timeline h3 {
-    font-size: 16px;
-  }
-  .timeline p {
-    padding-top: 20px;
-  }
-}
-/*——————————————
-others
-———————————————*/
-
-a.portfolio-link {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
+.bar {
+    height:4px;
+    background:#eee;
+    width:100%;
+    position:relative;
+    top:13px;
+    left:0;
 }
